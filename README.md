@@ -72,6 +72,7 @@ Explicit binding - We explicitly pass in  what we want 'this' keyword to refer t
 .apply- will immediately invoke the function and we pass the arguments as an array.
 .bind - we pass the arguments 1 by 1 but it does not immediately invoke the function , it returns a brand new function that can be invoke later
 
+New binding - When a function is invoked as a constructor function 'this' points to the newly created object.
 
 5. Why do we need super() in an extended class?
 
