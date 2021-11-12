@@ -16,6 +16,11 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
+//In our case nestedFunction is an inner function and can access the internal variable that is declared in the 
+//outer function.This behavior is known as lexical scoping.
+//Whenever we create a function within another function that means we created a closure. A closer happens when we 
+//invoke the function and the inner function reaches to the outer function to use the outer function's variable.
+//The external variable it`s declared on global scope and that`s why we can use that variable anywhere in the code or even in functions.
 
 
 
@@ -28,10 +33,12 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(num) {
+  const counter = num*(num+1)/2
+  return counter;
 
   }
+ console.log(summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
