@@ -26,13 +26,57 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+ .map() - is an advanced array method that returns a new array but do not manipulate the original array, it needs a return statement. It loops through every item and it`s used mostly to convert  data 
+*for example  if we want to get an array of numbers in the power of two of each element in the array below :
+ const num =[1,2,3,4,5]
+
+const powerOfTwo = num.map(function(item){
+    return item[i] ** 2
+})
+
+.reduce() - is an advanced array method that iterates through each element in the array and returns back a single value and does not manipulate the original array. The reduce method executes a callback function, which function usually takes two parameters the current value and last value and has an initial value most of the time 0.
+It is usually used for sum and production but can be used for anything
+ *for example we can get the sum (single value) of the array below.
+const num =[1,2,3,4,5]
+
+const sum = num.reduce(function(last_value,current_value){
+    return last_value + current_value[i]
+},0)
+
+
+.filter() - When you want to filter data based on something that equals true or false, it it true it`s included in the new array if its false is not included in the new array.
+.filter() is  an advanced array method , returns a new array and does not manipulate the original one also requires a return statement.
+*for example if we want to get only odd numbers for the array num =[1,2,3,4,5] filter method would be a perfect use.
+
+const getOddNumbers = num.filter(function(item){
+    return num[i] % 2 === 1 
+})
+
 2. Explain the difference between a callback and a higher order function.
 
+A callback function is a function that is passed in another function as an argument.
+Higher order function is the function who receives a callback function as an argument
+
 3. Explain what a closure is.
+A closure happens when a function(inner function) that is defined inside another function(parent or outer function) reaches out to the parent function to grab or use a variable that is defined in the parent scope.
 
 4. Describe the four principles of the 'this' keyword.
 
+Window binding - if we haven`t give 'this' keyword any context it will return the window , global object in node
+ or will return undefined if we are on strict mode.
+
+Implicit binding- 'This'keyword applies to object with methods. When the function is invoked look to the left of the dot , that's what 'this' refers to.
+
+Explicit binding - We explicitly pass in  what we want 'this' keyword to refer to by using .call , .bind, .apply.
+.call-  will immediately invoke the function and we pass the arguments 1 by 1.
+.apply- will immediately invoke the function and we pass the arguments as an array.
+.bind - we pass the arguments 1 by 1 but it does not immediately invoke the function , it returns a brand new function that can be invoke later
+
+
 5. Why do we need super() in an extended class?
+
+extend tells super what to super to or to call to.
+super and extend together do what object .create and parent.call did.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
