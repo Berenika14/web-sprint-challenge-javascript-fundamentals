@@ -15,13 +15,15 @@ function myFunction() {
 }
 myFunction();
 
-//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-//In our case nestedFunction is an inner function and can access the internal variable that is declared in the 
-//outer function.This behavior is known as lexical scoping.
-//Whenever we create a function within another function that means we created a closure. A closer happens when we 
-//invoke the function and the inner function reaches to the outer function to use the outer function's variable.
-//The external variable it`s declared on global scope and that`s why we can use that variable anywhere in the code or even in functions.
 
+
+//🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
+
+
+// nestedFunction is a function defined inside of another function. Consequently, it can access variables defined in
+// the parent function's scope. The ability to do this is referred to as a closure on the variable "internal".
+//A closure happens when we invoke the function and the inner function reaches to the outer function to use the outer function's variable.
+//The external variable it`s declared on global scope and that`s why we can use that variable anywhere in the code or even in functions.
 
 
 
@@ -38,7 +40,7 @@ function summation(num) {
   return counter;
 
   }
- console.log(summation(4));
+ //console.log(summation(10));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
